@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "EMODU-INTEVENSI-AFEKTIF-INTERAKTIF",
+    "description": "Extension intervensi afektif dan interaktif dengan identifikasi emosi user",
+    "version": "1.0",
+    "background": {
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "web_accessible_resources": [
+    {
+        "resources": ["EmojiPicker.tsx"],
+        "matches": ["<all_urls>"]
+    }
+    ]
+}
